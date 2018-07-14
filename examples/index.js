@@ -19,20 +19,23 @@ class Example extends Component {
       { name: "Cash", value: 12480 },
       { name: "Card", value: 10520 },
       { name: "Coupon", value: 39300 },
-      { name: "Paytm", value: 9410 },
+      { name: "e-Wallet", value: 9410 },
       { name: "Store Credit", value: 9410 }
     ];
     const props = {
-      size: 1000,
+      size: 500,
       onHover: this.onHover.bind(this),
+      title: "Sales Channels",
       data
     };
     const { active } = this.state;
     return (
       <div>
         <Donut {...props} />
-        Active :
-        {active >= 0 ? data[active].name : "none"}
+        <div>
+          Active :
+          {active >= 0 ? data[active].name : "none"}
+        </div>
       </div>
     );
   }

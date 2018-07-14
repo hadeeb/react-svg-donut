@@ -3,3 +3,6 @@ build
 examples/build
 node_modules
 *.log
+
+# Snapshot testing:
+test/__snapshots__

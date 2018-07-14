@@ -6,11 +6,11 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: "body"
 });
 module.exports = {
-  context: __dirname + "/examples",
+  context: `${__dirname}/examples`,
   entry: "./index.js",
   output: {
     filename: "bundle.js",
-    path: __dirname + "/examples/build"
+    path: `${__dirname}/examples/build`
   },
   module: {
     rules: [

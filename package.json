@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "babel lib -d build",
     "build-example": "webpack",
-    "lint": "eslint lib/ examples/ test/",
+    "lint": "eslint ./ --fix",
     "test": "jest"
   },
   "keywords": [
@@ -40,6 +40,7 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^23.4.1",
