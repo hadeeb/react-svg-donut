@@ -1,6 +1,8 @@
 .vscode
 examples
+lib
 test
+.babelrc
 .eslintignore
 .eslintrc
 webpack.config.js
