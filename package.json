@@ -1,0 +1,49 @@
+{
+  "name": "react-donut",
+  "version": "0.1.0",
+  "description": "A simple library to create donut charts with react",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "babel lib -d build"
+  },
+  "keywords": [
+    "react",
+    "svg",
+    "donut",
+    "pie",
+    "chart"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hadeeb/react-svg-donut.git"
+  },
+  "author": "hadeeb",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.4.1",
+    "prettier": "^1.13.7",
+    "react-test-renderer": "^16.4.1",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": ["airbnb", "plugin:jest/recommended", "prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "env": {
+    "browser": true
+  }
+}

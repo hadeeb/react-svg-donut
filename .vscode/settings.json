@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "prettier.tabWidth": 2,
+  "editor.formatOnSave": true,
+  "eslint.options": { "configFile": "./.eslintrc" },
+  "files.eol": "\n"
+}
