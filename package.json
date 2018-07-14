@@ -5,7 +5,10 @@
   "main": "build/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
-    "build": "babel lib -d build"
+    "build": "babel lib -d build",
+    "build-example": "webpack",
+    "lint": "eslint lib/ examples/ test/",
+    "test": "jest"
   },
   "keywords": [
     "react",
