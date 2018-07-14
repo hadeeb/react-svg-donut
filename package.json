@@ -1,6 +1,6 @@
 {
   "name": "react-svg-donut",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple library to create donut charts with react",
   "main": "./build/index.js",
   "scripts": {
