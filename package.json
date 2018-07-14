@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "babel lib -d build",
     "build-example": "webpack --mode production",
-    "install": "npm run build",
+    "install": "npx babel lib -d build --presets env,react",
     "lint": "eslint ./ --fix",
     "test": "jest",
     "deploy": "gh-pages -d examples/build"
@@ -26,9 +26,7 @@
   "author": "hadeeb",
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "prop-types": "^15.6.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -51,5 +49,9 @@
     "webpack": "^4.16.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
+  },
+  "peerDependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }
