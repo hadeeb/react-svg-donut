@@ -1,11 +1,11 @@
-# ReactJS SVG Donut Chart
+# React SVG Donut Chart
 
-An SVG-based ReactJS pie/donut chart component.
+An SVG-based React pie/donut chart component.
 
 [![NPM](https://nodei.co/npm/react-svg-donut.png)](https://nodei.co/npm/react-svg-donut/)
 
 ## Installation
-Download `react-svg-donut` from the NPM registry.
+Add `react-svg-donut` to your project from the NPM registry.
 
 ```shell
 yarn add react-svg-donut
@@ -21,7 +21,7 @@ Visit [<b>GitHub page</b>][github-page]
 import React from "react"
 import DonutChart from "react-svg-donut"
 
-const title="Total Movies"
+const title="Movies"
 const data = [
   {name: "Comedy", value: 4},
   {name: "Action", value: 5},
