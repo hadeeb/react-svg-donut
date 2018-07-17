@@ -9,9 +9,11 @@ class Example extends Component {
   }
 
   onHover(item) {
-    this.setState({
-      active: item
-    });
+    const { active } = this.state;
+    if (active !== item)
+      this.setState({
+        active: item
+      });
   }
 
   render() {
@@ -22,17 +24,27 @@ class Example extends Component {
       { name: "e-Wallet", value: 9410 },
       { name: "Store Credit", value: 9410 }
     ];
+    const { active } = this.state;
     const props = {
       size: 500,
       onHover: this.onHover.bind(this),
       title: "Sales Channels",
+      active,
       data
     };
-    const { active } = this.state;
     return (
       <div>
         <Donut {...props} />
         <div>
+          {data.map((item, index) => (
+            <div
+              key={item.name}
+              onMouseEnter={() => this.onHover(index)}
+              onMouseLeave={() => this.onHover(-1)}
+            >
+              {item.name}
+            </div>
+          ))}
           Active :
           {active >= 0 ? data[active].name : "none"}
         </div>
